@@ -1,0 +1,69 @@
+import Image from "next/image";
+import React from "react";
+
+const Projects = () => {
+  return (
+    <div className="pt-16 pb-16">
+      <h1 className="text-center text-white text-2xl md:text-4xl xl:text-5xl font-bold">
+        A small selection of rent <br />{" "}
+        <span className="text-cyan-300">Projects</span>
+      </h1>
+      <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+        {/* 1st Project */}
+        <div>
+          <Image
+            src="/images/p1.jpg"
+            alt="Img"
+            width={800}
+            height={650}
+          />
+          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+            Modern Finance Dashboard UI
+          </h1>
+          <h1 className="pt-2 font-medium text-white/80 ">Apps , UI/UX</h1>
+        </div>
+        {/* 2nd Project */}
+        <div>
+          <Image
+            src="/images/p2.jpg"
+            alt="Img"
+            width={800}
+            height={650}
+          />
+          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+            Portfolio Website for creatives
+          </h1>
+          <h1 className="pt-2 font-medium text-white/80 ">Branding , Motion</h1>
+        </div>
+        {/* 3rd Project */}
+        <div>
+          <Image
+            src="/images/p3.jpg"
+            alt="Img"
+            width={800}
+            height={650}
+          />
+          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+            Branding Identity for startup
+          </h1>
+          <h1 className="pt-2 font-medium text-white/80 ">Branding , UI/UX</h1>
+        </div>
+        {/* 4st Project */}
+        <div>
+          <Image
+            src="/images/p4.jpg"
+            alt="Img"
+            width={800}
+            height={650}
+          />
+          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+            SaaS Dashboard Development
+          </h1>
+          <h1 className="pt-2 font-medium text-white/80 ">Apps , UI/UX</h1>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
