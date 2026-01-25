@@ -1,0 +1,43 @@
+import Image from "next/image";
+import React from "react";
+
+type Props = {
+  image: string;
+  title: string;
+};
+
+const BlogCard = ({ image, title }: Props) => {
+  return (
+    <div>
+      <Image
+        src={image}
+        alt="Blog"
+        width={500}
+        height={500}
+        className="object-cover"
+      />
+      <p className="text-gray-500 font-medium mt-4 text-medium sm:text-lg">
+        25 Jan 2026
+      </p>
+      <h1
+        className="mt-5 text-lg sm:text-xl text-white font-bold hover:underline
+       hover:text-cyan-300 cursor-pointer transition-all duration-300"
+      >
+        {title}
+      </h1>
+      <div className="mt-4 flex gap-2 items-center">
+        <p className="px-4 py-1.5 bg-blue-900 text-white text-sm sm:text-base font-bold rounded-full">
+          React
+        </p>
+        <p className="px-4 py-1.5 bg-blue-900 text-white text-sm sm:text-base font-bold rounded-full">
+          Next Js
+        </p>
+        <p className="px-4 py-1.5 bg-blue-900 text-white text-sm sm:text-base font-bold rounded-full">
+          Tailwind
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default BlogCard;
