@@ -63,7 +63,11 @@ const Contact = () => {
           </div>
         </div>
         {/* Form */}
-        <div className="md:p-10 p-5 bg-[#131332] rounded-lg">
+        <div
+          data-aos="zoom in"
+          data-aos-anchor-placement="top-center"
+          className="md:p-10 p-5 bg-[#131332] rounded-lg"
+        >
           <input
             type="text"
             placeholder="Name"
@@ -87,7 +91,12 @@ const Contact = () => {
             className="px-4 py-3.5 bg-[#363659] text-white outline-none rounded-md 
         w-full placeholder:text-white/70 mt-6 h-40"
           ></textarea>
-          <button className="mt-8 px-12 bg-blue-950 hover:bg-blue-900 py-4 transition-all duration-300 cursor-pointer text-white rounded-full">Send Message</button>
+          <button
+            className="mt-8 px-12 bg-blue-950 hover:bg-blue-900 py-4 transition-all 
+          duration-300 cursor-pointer text-white rounded-full"
+          >
+            Send Message
+          </button>
         </div>
       </div>
     </div>
