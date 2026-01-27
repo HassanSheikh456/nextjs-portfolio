@@ -14,7 +14,7 @@ const Resume = () => {
             My Word
             <span className="text-cyan-200"> Experience</span>
           </h1>
-          <div className="mt-10">
+          <div className="mt-10" data-aos="zoom-in" data-aos-anchor-placement="top-center">
             <ResumeCard Icon={FaCodepen} role="Full-stack Developer" />
             <ResumeCard Icon={FaReact} role="Front-End Developer" />
             <ResumeCard Icon={BsDatabase} role="Back-End Developer" />
@@ -26,7 +26,7 @@ const Resume = () => {
             My
             <span className="text-cyan-200"> Education</span>
           </h1>
-          <div className="mt-10">
+          <div className="mt-10" data-aos="zoom-out" data-aos-delay="300" data-aos-anchor-placement="top-center">
             <ResumeCard
               Icon={BiBadge}
               role="Design Institute of Technology"
